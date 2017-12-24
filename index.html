@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To do App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="assets/css/to-do.css" type = "text/css"/>
+  <!-- jQuery library -->
+  <script src="assets/js/lib/jquery-3.2.1.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+    <div class="container main">
+
+      <div class="header text-center">
+        TO-DO LIST
+        <span class="glyphicon glyphicon-th-list"></span>
+      </div>
+
+      <div class="forms">
+        <ul class="nav nav-pills nav-justified">
+          <li class="active"><a data-toggle="pill" href="#add-new-to-do">Add to do</a></li>
+          <li><a data-toggle="pill" href="#search-to-do">Search</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="add-new-to-do">
+            <input type="text" placeholder="Add new to do" class="form-control" name="Add to do"/>
+          </div>
+          <div class="tab-pane" id="search-to-do">
+            <input type="text" placeholder="Search to do" class="form-control" name="Search to do"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="list-display">
+
+        <div class="panel panel-default">
+          <div class="panel-body">Sleep at 11pm</div>
+          <span class="glyphicon glyphicon-align-justify todo-feature-open"></span>
+          <div class="todo-features">
+            <span class="glyphicon glyphicon-trash"></span>
+            <span class="glyphicon glyphicon-ok"></span>
+            <span class="glyphicon glyphicon-star"></span>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">Sleep at 12pm</div>
+          <span class="glyphicon glyphicon-align-justify todo-feature-open"></span>
+          <div class="todo-features">
+            <span class="glyphicon glyphicon-trash"></span>
+            <span class="glyphicon glyphicon-ok"></span>
+            <span class="glyphicon glyphicon-star"></span>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">Sleep at 5pm</div>
+          <span class="glyphicon glyphicon-align-justify todo-feature-open"></span>
+          <div class="todo-features">
+            <span class="glyphicon glyphicon-trash"></span>
+            <span class="glyphicon glyphicon-ok"></span>
+            <span class="glyphicon glyphicon-star"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<script src="assets/js/to-do.js" type="text/javascript"></script>
+</body>
+</html>

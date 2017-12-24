@@ -1,0 +1,67 @@
+html, body {
+		font-size: 16px;
+		box-sizing: border-box !important;
+		}
+/* Bootstrap customization*/
+.nav-pills > li > a, .panel, .form-control {
+		border-radius: 0;
+		}
+.nav.nav-pills > li.active>a {
+		background-color: #647266;
+		}
+.panel {margin: 0; position: relative;}
+/*Custom CSS*/
+.main {
+		margin: 30px auto;
+		padding: 0;
+		width: 50%;
+		border: 1px solid #000000;
+		}
+.header {
+		background-color: #337ab7;
+		margin: 0;
+		padding: 10px 20px;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.5rem;
+		}
+.header span {float: right}
+
+input[type='text'] {
+		height: 3rem;
+		background-color: antiquewhite;
+		}
+
+/*To do List */
+
+.panel-body {
+		width: 70%;
+		display: inline-block;
+		}
+
+.todo-feature-open, .todo-features {float: right}
+.todo-feature-open {margin-top: 1rem; margin-right: 0.25rem;}
+.todo-features {
+		display: inline-block;
+		width: 25%;
+		position: relative;
+		height: 100%;
+		padding: 0.5rem;		
+		}
+
+.todo-features > span {
+		width: 30%;
+		height: auto;
+		font-size: 1.5rem;
+		text-align: center;
+		}
+.completed-content {
+		color: gray;
+		text-decoration: line-through;
+		}
+.completed {color: green}
+.stared-content {
+		background-color: #ff3f71;
+		font-weight: bold;
+		}
+.stared {color: yellow}
