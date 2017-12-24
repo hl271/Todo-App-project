@@ -1,24 +1,32 @@
 html, body {
 		font-size: 16px;
-		box-sizing: border-box !important;
+
 		}
+
 /* Bootstrap customization*/
 .nav-pills > li > a, .panel, .form-control {
 		border-radius: 0;
 		}
 .nav.nav-pills > li.active>a {
-		background-color: #647266;
+		background-color: #ffb5ba;
 		}
 .panel {margin: 0; position: relative;}
 /*Custom CSS*/
+body {
+		background: #ff7e5f;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
 .main {
-		margin: 30px auto;
+		margin: 50px auto;
 		padding: 0;
 		width: 50%;
-		border: 1px solid #000000;
+		box-shadow: 0 0 1px gray;
+		background-color: white;
 		}
 .header {
-		background-color: #337ab7;
+		background-color: #61bfbe;
 		margin: 0;
 		padding: 10px 20px;
 		color: #fff;
@@ -28,12 +36,15 @@ html, body {
 .header span {float: right}
 
 input[type='text'] {
-		height: 3rem;
-		background-color: antiquewhite;
+		font-size: 1.25rem;
+		height: 3.5rem;
+		background-color: #fff;
+		color: #337ab7;
+		border-width: 0 0 1px 0;
 		}
 
 /*To do List */
-
+.panel {border: none; border-bottom: 1px solid #eee;}
 .panel-body {
 		width: 70%;
 		display: inline-block;
@@ -49,19 +60,20 @@ input[type='text'] {
 		padding: 0.5rem;		
 		}
 
-.todo-features > span {
+.todo-features  span {
 		width: 30%;
 		height: auto;
 		font-size: 1.5rem;
 		text-align: center;
+		color: #ccc;
 		}
 .completed-content {
 		color: gray;
 		text-decoration: line-through;
 		}
-.completed {color: green}
+.completed {color: green !important}
 .stared-content {
 		background-color: #ff3f71;
 		font-weight: bold;
 		}
-.stared {color: yellow}
+.stared {color: yellow !important}
