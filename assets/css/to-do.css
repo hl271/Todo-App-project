@@ -55,17 +55,20 @@ input[type='text'] {
 .todo-features {
 		display: inline-block;
 		width: 25%;
-		position: relative;
+		position: absolute;
 		height: 100%;
-		padding: 0.5rem;		
+		padding: 0;
 		}
 
 .todo-features  span {
 		width: 30%;
-		height: auto;
-		font-size: 1.5rem;
+		height: 100%;
+		display: inline-block;
+		padding: 0.75rem 0;
+		font-size: 1.25rem;
 		text-align: center;
 		color: #ccc;
+		overflow: visible;
 		}
 .completed-content {
 		color: gray;
@@ -77,3 +80,12 @@ input[type='text'] {
 		font-weight: bold;
 		}
 .stared {color: yellow !important}
+
+@media (max-width: 700px) {
+		body, html {font-size: 12px}
+		.main {width: 60%}
+		}
+@media (max-width: 490px) {
+		body, html {font-size: 11px;}
+		.main {width: 75%}
+		}
